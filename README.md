@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Introduction
+This project uses aion-web3 and AIWA(getaiwa.com) to intereact with a Java contract in the Aion network.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
