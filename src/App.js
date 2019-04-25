@@ -7,21 +7,19 @@ class App extends Component {
     componentDidMount = () => {
 
         setInterval(
-            //detect aiwa
             function() {
                 if (window.aionweb3 ) {
                     this.setState({
-                        aionweb3: window.aionweb3,
-                        aiwa: true
+                        aionweb3: window.aionweb3,              //detect aiwa
                     });
 
-                    try {
-                        this.setState({
-                            account:  window.aionweb3.account[0]
-                        })
-                    }catch(e) {
-                        //console.error("no account", e.message);
-                    }
+                    // try {
+                    //     this.setState({
+                    //         account:  window.aionweb3.account[0]  // get the first account from aiwa
+                    //     })
+                    // }catch(e) {
+                    //     //console.error("no account", e.message);
+                    // }
                 }
 
             }.bind(this),
@@ -81,7 +79,7 @@ class App extends Component {
             to: ctaddress,
             data: data,
             gas: 2000000,
-            type: "0x1"  //for java contract
+            type: "0x1"  //for any transaction except for java contract deployment
         };
 
         try {
@@ -103,15 +101,22 @@ class App extends Component {
         let ctAddress =
             "0xa084b42efa079ad85b2c5b6c3d8a3fc6165cb13d06553ca566c29d89e94b80d2";
 
+        //set aiwa accouunt
+        try {
+            this.setState({
+                account:  window.aionweb3.account[0]
+            })
+        } catch(e) {
+            console.error("no account for sending", e.message);
+        }
 
-        let privateKey =
-            "bb3b642bbfab34fcf2ea79ee80bd97d2c109ab13f5c8ccfec787f56e60f34ca7c0d4e3868869f4e734d18f147c16ae1336b1c9bd7d7890ee981e48933aa5604c";
-        let acc = web3.eth.accounts.privateKeyToAccount(privateKey);
-        console.log("account " +acc.address);
+        console.log("account is " + this.state.account);
+
+
         let data = web3.avm.contract.method('getString').encode();
 
         let txObject = {
-            from: acc.address,
+            from:this.account,
             to: ctAddress,
             gas: 100000,
             gasPrice: 1,
