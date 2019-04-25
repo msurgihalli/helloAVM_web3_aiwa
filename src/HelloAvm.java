@@ -1,4 +1,3 @@
-package Kenroy;
 
 import avm.Blockchain;
 import org.aion.avm.tooling.abi.Callable;
