@@ -25,7 +25,7 @@ class App extends Component {
         );
     };
 
-    constructor(props) {
+    constructor(props, context) {
         super(props);
         this.state = {
             aionweb3: null,
@@ -44,7 +44,7 @@ class App extends Component {
 
         //set web3
         let web3 = new Web3(
-            new Web3.providers.HttpProvider(this.state.httpProvider)
+            new Web3.providers.HttpProvider(this.httpProvider)
         );
 
         //set aiwa accouunt
@@ -59,16 +59,17 @@ class App extends Component {
         //the contract method you want to call
         let data = web3.avm.contract.method('setString').inputs(['string'],[mystring]).encode();
 
+
         const txObject = {
             from: this.state.account,
-            to: this.state.ctAddress,
+            to: this.ctAddress,
             data: data,
             gas: 2000000,
             type: "0x1"  //for any transaction except for java contract deployment
         };
 
         try {
-             await window.aionweb3.sendTransaction(txObject);
+            const signedTx = await window.aionweb3.sendTransaction(txObject);
         } catch (err) {
             console.log(err);
         }
@@ -78,7 +79,7 @@ class App extends Component {
     //call smart contract method
     getFunction = async () => {
         let web3 = new Web3(
-            new Web3.providers.HttpProvider(this.state.httpProvider)
+            new Web3.providers.HttpProvider(this.httpProvider)
         );
 
         //set aiwa accouunt
@@ -94,7 +95,7 @@ class App extends Component {
 
         let txObject = {
             from:this.account,
-            to: this.state.ctAddress,
+            to: this.ctAddress,
             gas: 100000,
             gasPrice: 1,
             data: data

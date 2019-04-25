@@ -2,77 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5db1b63-5181-491b-82ba-a20a6be203d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/binding.gyp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/bufferutil.node.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/obj.target/bufferutil.node.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/obj.target/bufferutil/src/bufferutil.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/obj.target/validation.node.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/obj.target/validation/src/validation.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/.deps/Release/validation.node.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/bufferutil.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/obj.target/bufferutil.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/obj.target/bufferutil/src/bufferutil.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/obj.target/validation.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/obj.target/validation/src/validation.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/Release/validation.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/binding.Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/bufferutil.target.mk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/config.gypi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/build/validation.target.mk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/builderror.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/BufferUtil.fallback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/BufferUtil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/Deprecation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/Validation.fallback.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/Validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/W3CWebSocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketClient.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketConnection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketFrame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketRouter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketRouterRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/WebSocketServer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/lib/websocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/src/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/src/inspector-log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/src/bufferutil.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/src/validation.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/websocket/vendor/FastBufferList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppForCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,11 +17,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="24" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="604">
+              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppForCounter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="20" selection-end-line="152" />
             </state>
           </provider>
         </entry>
@@ -99,8 +36,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>aiwa</find>
       <find>value</find>
+      <find>val</find>
+      <find>aiwa</find>
+      <find>signed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,6 +48,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/AppForCounter.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
@@ -152,12 +92,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556208887111" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,12 +127,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556119390196</updated>
-      <workItem from="1556119391442" duration="1747000" />
+      <workItem from="1556119391442" duration="3760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1747000" />
+    <option name="totallyTimeSpent" value="3760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1667" y="25" width="1853" height="1055" extended-state="6" />
@@ -226,13 +172,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/AppForCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="20" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="604">
+          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
         </state>
       </provider>
     </entry>
