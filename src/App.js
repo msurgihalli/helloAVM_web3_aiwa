@@ -142,6 +142,91 @@ class App extends Component {
 
                     <h1>Current String: {this.state.result}</h1>
 
+                    <header className="masthead">
+                        <div className="container">
+                            <div className="intro-text">
+                                <div className="intro-lead-in"></div>
+                                <div className="intro-heading text-uppercase">Blockchain Mortgages!</div>
+                                <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section id="contact">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12 text-center">
+                                    <h2 className="section-heading text-uppercase">Application</h2>
+                                </div>
+                            </div>
+                            <div id="mainNav"></div>
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <form id="contactForm" name="sentMessage" noValidate="novalidate">
+                                        <div className="row">
+                                            <h3 className="section-subheading text-muted col-md-6">Property
+                                                Information</h3>
+                                            <h3 className="section-subheading text-muted col-md-6">Buyer Info
+                                                Number</h3>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-md-6">
+                                                <div className="form-group">
+                                                    <input className="form-control" id="propertyOwner" type="text"
+                                                           placeholder="Currenty Property Owner *" required="required"
+                                                           data-validation-required-message="Please enter your name."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                                <div className="form-group">
+                                                    <input className="form-control" id="propertyValue" type="number"
+                                                           placeholder="Property Value *" required="required"
+                                                           data-validation-required-message="Please enter your email address."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                                <div className="form-group">
+                                                    <input className="form-control" id="location" type="text"
+                                                           placeholder="Location *" required="required"
+                                                           data-validation-required-message="Please enter your phone number."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <div className="form-group">
+                                                    <input className="form-control" id="buyerKYC" type="text"
+                                                           placeholder="Buyer KYC - hash of the KYC info (name, address, etc.) *"
+                                                           required="required"
+                                                           data-validation-required-message="Please enter your name."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                                <div className="form-group">
+                                                    <input className="form-control" id="buyerCreditScore" type="number"
+                                                           placeholder="Buyer Credit Score *" required="required"
+                                                           data-validation-required-message="Please enter your email address."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                                <div className="form-group">
+                                                    <input className="form-control" id="buyerIncome" type="number"
+                                                           placeholder="Buyer Income *" required="required"
+                                                           data-validation-required-message="Please enter your phone number."/>
+                                                        <p className="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div className="clearfix"></div>
+                                            <div className="col-lg-12 text-center">
+                                                <div id="success"></div>
+                                                <button id="sendMessageButton"
+                                                        className="btn btn-secondary btn-xl text-uppercase"
+                                                        type="submit">Apply
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         );
