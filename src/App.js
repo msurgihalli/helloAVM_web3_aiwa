@@ -19,11 +19,7 @@ class App extends Component {
             1000
         );
 
-        setInterval(
-            this.getFunction,
-            1000
-        );
-    };
+     };
 
     constructor(props) {
         super(props);
@@ -32,15 +28,18 @@ class App extends Component {
             aiwa: false,
             account: null, //user account,
             value: " ",
+            toAddr :"",
             result: "",
-            ctAddress: "0xa084b42efa079ad85b2c5b6c3d8a3fc6165cb13d06553ca566c29d89e94b80d2", //contract address,
-            httpProvider: "https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=ec13c1ff5f65488fa6432f5f79e595f6"
+            // ctAddress: "0xa084b42efa079ad85b2c5b6c3d8a3fc6165cb13d06553ca566c29d89e94b80d2", //contract address,
+            // httpProvider: "https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=ec13c1ff5f65488fa6432f5f79e595f6"
+            ctAddress: "0xa06e0e2f240e67866638587fca2bfe4f5bedec8f091c5d6155f2015b748b2182", //contract address,
+            httpProvider: "https://aion.api.nodesmith.io/v1/avmtestnet/jsonrpc?apiKey=3e88992ccd3741109cd484b57cf293aa"
         };
     }
 
 
     //send transaction to the smart contract
-    sendTransactionFunction = async (mystring) => {
+    sendTransactionFunction = async (mystring, tostring) => {
 
         //set web3
         let web3 = new Web3(
@@ -57,7 +56,11 @@ class App extends Component {
         }
 
         //the contract method you want to call
-        let data = web3.avm.contract.method('setString').inputs(['string'],[mystring]).encode();
+        // let data = web3.avm.contract.method('setString').inputs(['string'],[mystring]).encode();
+        // alert('A name was submitted: ' + mystring+' - '+ tostring);
+        // let data = web3.avm.contract.method('setString').inputs(['string', 'string'],[mystring, tostring]).encode();
+        let strData =  'propertyOwner'+'-'+'propertyValue'+'-'+'propertyLocation'+'-'+'propertyBuyerKyc'+'-'+'propertyBuyerCreditScore'+'-'+'propertyBuyerIncome'+'-'+'propertyLoanRequested'+'-'+'mortgageMonthlyPayment'
+        let data = web3.avm.contract.method('setString').inputs(['string'],[strData ]).encode();
 
         const txObject = {
             from: this.state.account,
@@ -91,6 +94,7 @@ class App extends Component {
         }
 
         let data = web3.avm.contract.method('getString').encode();
+        // let data = web3.avm.contract.method('getPropertyObj').encode();
 
         let txObject = {
             from:this.account,
@@ -102,9 +106,10 @@ class App extends Component {
 
         try {
             let res = await web3.eth.call(txObject); //call a method
-            let returnValue = await web3.avm.contract.decode('string', res);
+            let propertyBuyer = await web3.avm.contract.decode('string', res);
+            // let PropertyBuyer = await web3.avm.contract.decode('string', res);
             this.setState({
-                result: returnValue
+                result: propertyBuyer
             });
         } catch (err) {
             console.log("fail calling");
@@ -113,12 +118,17 @@ class App extends Component {
 
     //get user input
     handleChange = event => {
-        this.setState({ value: event.target.value });
+        this.setState({ value: event.target.value});
+    };
+
+    handleChange2 = event => {
+        this.setState({ toAddr: event.target.value});
     };
 
     handleSubmit = event => {
-        //alert('A name was submitted: ' + this.state.value);
-        this.sendTransactionFunction(this.state.value);
+        // alert('A name was submitted: ' + this.state.value+' - '+ this.state.toAddr);
+        this.sendTransactionFunction(this.state.value, this.state.toAddr);
+
         event.preventDefault();
     };
 
@@ -133,6 +143,11 @@ class App extends Component {
                                 type="text"
                                 value={this.state.value}
                                 onChange={this.handleChange}
+                            />
+                            <input
+                                type="text"
+                                value={this.state.toAddr}
+                                onChange={this.handleChange2}
                             />
                         </label>
                         <Button type="submit" value="Submit">
